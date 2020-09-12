@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Select Server</title>
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1213a7cbad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-content">
+      <div class="auth-bg">
+        <span class="r"></span>
+        <span class="r s"></span>
+        <span class="r s"></span>
+        <span class="r"></span>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+          <div class="mb-4">
+            <i class="feather icon-unlock auth-icon"></i>
+          </div>
+          <h3 class="mb-4">Select EqualPlus Server</h3>
+          <% servers.forEach((item, index) => { %>
+            <a href="/dashboard?guild=<%= item.gid %>" class="btn btn-discord shadow-2 mb-4"><image width="30" src="<%= item.icon || '/assets/images/favicon.ico' %>"></image> <%= item.name %> </a><br/>
+          <% }) %>
+        </div>
+     </div>
+    </div>
+  </div>
+
+  <!-- Required Js -->
+  <script src="assets/js/vendor-all.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

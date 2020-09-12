@@ -1299,6 +1299,21 @@ p.text-muted {
   color: #a389d4;
 }
 
+/* ====== Discord Status ======= */
+
+.text-c-dnd {
+  color: #f44236;
+}
+.text-c-idle {
+  color: #f4c22b;
+}
+.text-c-online {
+  color: #1de9b6;
+}
+.text-c-offline {
+  color: #636363;
+}
+
 /*====== text-color css ends ======*/
 /*====== Card top border css starts ======*/
 .card-border-c-blue {
@@ -10597,4 +10612,20 @@ div.code-toolbar > .toolbar span:hover {
 		-webkit-box-shadow: 0 0 0 0 rgba(4, 169, 245, 0);
 		box-shadow: 0 0 0 0 rgba(4, 169, 245, 0)
 	}
+}
+
+.btn-discord {
+  color: #fff !important;
+  background-color: #7289DA;
+  border-color: #7289DA;
+}
+
+.btn-discord:hover {
+  color: #fff;
+  background-color: #5565a0;
+  border-color: #5565a0;
+}
+
+.btn-discord:not(:disabled):not(.disabled).active:focus, .btn-discord:not(:disabled):not(.disabled):active:focus, .show > .btn-discord.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem #7289DA80;
 }
